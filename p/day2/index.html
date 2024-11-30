@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="zh-cn" dir="ltr">
     <head><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="#萌新杯优优的歌曲 ##题解代码\n&rsquo;&rsquo;' #include &lt;bits/stdc++.h&gt; using namespace std;\nint main() { int n; cin &gt;&gt; n; int *hash = new int[60]; int ans = 0; for (int i = 0; i &lt; n; i ++){ int num; cin &gt;&gt; num; ans += hash[(60 - (num % 60)) % 60]; hash[num % 60] ++; } cout &lt;&lt; ans; }\n">
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="萌新杯优优的歌曲 题解代码\n1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 #include &lt;bits/stdc++.h&gt; using namespace std; int main() { int n; cin &gt;&gt; n; int *hash = new int[60]; int ans = 0; for (int i = 0; i &lt; n; i ++){ int num; cin &gt;&gt; num; ans += hash[(60 - (num % 60)) % 60]; hash[num % 60] ++; } cout &lt;&lt; ans; } ">
 <title>Day2</title>
 
 <link rel='canonical' href='https://zzzhajige.github.io/p/day2/'>
 
 <link rel="stylesheet" href="/scss/style.min.0304c6baf04e01a8fe70693791cb744d56a3578a3120a8796cefc66825aa39c7.css"><meta property='og:title' content="Day2">
-<meta property='og:description' content="#萌新杯优优的歌曲 ##题解代码\n&rsquo;&rsquo;' #include &lt;bits/stdc++.h&gt; using namespace std;\nint main() { int n; cin &gt;&gt; n; int *hash = new int[60]; int ans = 0; for (int i = 0; i &lt; n; i ++){ int num; cin &gt;&gt; num; ans += hash[(60 - (num % 60)) % 60]; hash[num % 60] ++; } cout &lt;&lt; ans; }\n">
+<meta property='og:description' content="萌新杯优优的歌曲 题解代码\n1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 #include &lt;bits/stdc++.h&gt; using namespace std; int main() { int n; cin &gt;&gt; n; int *hash = new int[60]; int ans = 0; for (int i = 0; i &lt; n; i ++){ int num; cin &gt;&gt; num; ans += hash[(60 - (num % 60)) % 60]; hash[num % 60] ++; } cout &lt;&lt; ans; } ">
 <meta property='og:url' content='https://zzzhajige.github.io/p/day2/'>
 <meta property='og:site_name' content='炸鸡哥'>
 <meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:published_time' content='2024-11-30T20:45:15&#43;08:00'/><meta property='article:modified_time' content='2024-11-30T20:45:15&#43;08:00'/>
 <meta name="twitter:title" content="Day2">
-<meta name="twitter:description" content="#萌新杯优优的歌曲 ##题解代码\n&rsquo;&rsquo;' #include &lt;bits/stdc++.h&gt; using namespace std;\nint main() { int n; cin &gt;&gt; n; int *hash = new int[60]; int ans = 0; for (int i = 0; i &lt; n; i ++){ int num; cin &gt;&gt; num; ans += hash[(60 - (num % 60)) % 60]; hash[num % 60] ++; } cout &lt;&lt; ans; }\n">
+<meta name="twitter:description" content="萌新杯优优的歌曲 题解代码\n1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 #include &lt;bits/stdc++.h&gt; using namespace std; int main() { int n; cin &gt;&gt; n; int *hash = new int[60]; int ans = 0; for (int i = 0; i &lt; n; i ++){ int num; cin &gt;&gt; num; ans += hash[(60 - (num % 60)) % 60]; hash[num % 60] ++; } cout &lt;&lt; ans; } ">
     </head>
     <body class="
     article-page
@@ -306,30 +306,55 @@
     <section class="article-content">
     
     
-    <p>#萌新杯优优的歌曲
-##题解代码</p>
-<p>&rsquo;&rsquo;'
-#include &lt;bits/stdc++.h&gt;
-using namespace std;</p>
-<pre><code>int main() {
- int n;
- cin &gt;&gt; n;
- int *hash = new int[60];
-
- int ans = 0;
- for (int i = 0; i &lt; n; i ++){
-	    int num;
-	    cin &gt;&gt; num;
-
- 	   ans += hash[(60 - (num % 60)) % 60];
- 	   hash[num % 60] ++;
-	}
-
- cout &lt;&lt; ans;
-</code></pre>
-<p>}</p>
-<p>&rsquo;''</p>
-
+    <p>萌新杯优优的歌曲
+题解代码</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-c++" data-lang="c++"><span class="line"><span class="cl">	<span class="cp">#include</span> <span class="cpf">&lt;bits/stdc++.h&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="cp"></span>	<span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">	<span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">   	 <span class="kt">int</span> <span class="n">n</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">   	 <span class="n">cin</span> <span class="o">&gt;&gt;</span> <span class="n">n</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">   	 <span class="kt">int</span> <span class="o">*</span><span class="n">hash</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">int</span><span class="p">[</span><span class="mi">60</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">   	 <span class="kt">int</span> <span class="n">ans</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">   	 <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">n</span><span class="p">;</span> <span class="n">i</span> <span class="o">++</span><span class="p">){</span>
+</span></span><span class="line"><span class="cl">    	    <span class="kt">int</span> <span class="n">num</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    	    <span class="n">cin</span> <span class="o">&gt;&gt;</span> <span class="n">num</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">     	   <span class="n">ans</span> <span class="o">+=</span> <span class="n">hash</span><span class="p">[(</span><span class="mi">60</span> <span class="o">-</span> <span class="p">(</span><span class="n">num</span> <span class="o">%</span> <span class="mi">60</span><span class="p">))</span> <span class="o">%</span> <span class="mi">60</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl">     	   <span class="n">hash</span><span class="p">[</span><span class="n">num</span> <span class="o">%</span> <span class="mi">60</span><span class="p">]</span> <span class="o">++</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    	<span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">   	 <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">ans</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    
+</span></span><span class="line"><span class="cl">	<span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div>
 </section>
 
 
