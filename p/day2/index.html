@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="zh-cn" dir="ltr">
     <head><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="">
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="#题解代码 &rsquo;&rsquo;' #include &lt;bits/stdc++.h&gt; using namespace std;\nint main() { int n; cin &raquo; n; int *hash = new int[60];\nint ans = 0; for (int i = 0; i &lt; n; i ++){ int num; cin &gt;&gt; num; ans += hash[(60 - (num % 60)) % 60]; hash[num % 60] ++; } cout &lt;&lt; ans; }\n&rsquo;''\n">
 <title>Day2</title>
 
 <link rel='canonical' href='https://zzzhajige.github.io/p/day2/'>
 
 <link rel="stylesheet" href="/scss/style.min.0304c6baf04e01a8fe70693791cb744d56a3578a3120a8796cefc66825aa39c7.css"><meta property='og:title' content="Day2">
-<meta property='og:description' content="">
+<meta property='og:description' content="#题解代码 &rsquo;&rsquo;' #include &lt;bits/stdc++.h&gt; using namespace std;\nint main() { int n; cin &raquo; n; int *hash = new int[60];\nint ans = 0; for (int i = 0; i &lt; n; i ++){ int num; cin &gt;&gt; num; ans += hash[(60 - (num % 60)) % 60]; hash[num % 60] ++; } cout &lt;&lt; ans; }\n&rsquo;''\n">
 <meta property='og:url' content='https://zzzhajige.github.io/p/day2/'>
 <meta property='og:site_name' content='炸鸡哥'>
 <meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:published_time' content='2024-11-30T20:45:15&#43;08:00'/><meta property='article:modified_time' content='2024-11-30T20:45:15&#43;08:00'/>
 <meta name="twitter:title" content="Day2">
-<meta name="twitter:description" content="">
+<meta name="twitter:description" content="#题解代码 &rsquo;&rsquo;' #include &lt;bits/stdc++.h&gt; using namespace std;\nint main() { int n; cin &raquo; n; int *hash = new int[60];\nint ans = 0; for (int i = 0; i &lt; n; i ++){ int num; cin &gt;&gt; num; ans += hash[(60 - (num % 60)) % 60]; hash[num % 60] ++; } cout &lt;&lt; ans; }\n&rsquo;''\n">
     </head>
     <body class="
     article-page
@@ -306,7 +306,28 @@
     <section class="article-content">
     
     
-    
+    <p>#题解代码
+&rsquo;&rsquo;'
+#include &lt;bits/stdc++.h&gt;
+using namespace std;</p>
+<p>int main() {
+int n;
+cin &raquo; n;
+int *hash = new int[60];</p>
+<pre><code>int ans = 0;
+for (int i = 0; i &lt; n; i ++){
+    int num;
+    cin &gt;&gt; num;
+
+    ans += hash[(60 - (num % 60)) % 60];
+    hash[num % 60] ++;
+}
+
+cout &lt;&lt; ans;
+</code></pre>
+<p>}</p>
+<p>&rsquo;''</p>
+
 </section>
 
 
