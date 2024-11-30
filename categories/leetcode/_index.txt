@@ -1,0 +1,9 @@
+---
+title: "算法"
+description: "算法竞赛刷题之路"
+slug: "算法"
+image: "shuimo.jpg"
+style:
+    background: "#2a9d8f"
+    color: "#fff"
+---
