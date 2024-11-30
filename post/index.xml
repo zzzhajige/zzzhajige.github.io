@@ -13,24 +13,26 @@
         <pubDate>Sat, 30 Nov 2024 20:45:15 +0800</pubDate>
         
         <guid>https://zzzhajige.github.io/p/day2/</guid>
-        <description>&lt;p&gt;#题解代码
-&amp;rsquo;&amp;rsquo;&#39;
+        <description>&lt;p&gt;#萌新杯优优的歌曲
+##题解代码&lt;/p&gt;
+&lt;p&gt;&amp;rsquo;&amp;rsquo;&#39;
 #include &amp;lt;bits/stdc++.h&amp;gt;
 using namespace std;&lt;/p&gt;
-&lt;p&gt;int main() {
-int n;
-cin &amp;raquo; n;
-int *hash = new int[60];&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;int ans = 0;
-for (int i = 0; i &amp;lt; n; i ++){
-    int num;
-    cin &amp;gt;&amp;gt; num;
+&lt;pre&gt;&lt;code&gt;int main() {
+ int n;
+ cin &amp;gt;&amp;gt; n;
+ int *hash = new int[60];
 
-    ans += hash[(60 - (num % 60)) % 60];
-    hash[num % 60] ++;
-}
+ int ans = 0;
+ for (int i = 0; i &amp;lt; n; i ++){
+	    int num;
+	    cin &amp;gt;&amp;gt; num;
 
-cout &amp;lt;&amp;lt; ans;
+ 	   ans += hash[(60 - (num % 60)) % 60];
+ 	   hash[num % 60] ++;
+	}
+
+ cout &amp;lt;&amp;lt; ans;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;}&lt;/p&gt;
 &lt;p&gt;&amp;rsquo;&#39;&#39;&lt;/p&gt;
